@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  background: rgb(12,74,110);
+  background: radial-gradient(circle, rgba(12,74,110,1) 0%, rgba(8,47,73,1) 95%); 
+}
+
+
+@layer utilities {
+  .streamernick {
+    font-family: var(--font-roboto-mono);
+  }
+  .border-glow-blue {
+    --tw-border-opacity: 1;
+    box-shadow: 0 0 10px #1e81ab, 0 0 15px #1e81ab, 0 0 15px #1e81ab, 0 0 30px #38bdf8;
+    border-color: #38bdf8;
+  }
+
+  .border-glow-purple {
+    --tw-border-opacity: 1;
+    box-shadow: 0 0 10px #4c1d95, 0 0 2px #4c1d95, 0 0 2px #4c1d95, 0 0 2px #4c1d95;
+    border-color: #4c1d95;
+  }
+}
