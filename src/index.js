@@ -5,6 +5,7 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './pages';
+import Streamer from './pages/streamer';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 
@@ -14,6 +15,7 @@ root.render(
       <Navbar/>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/streamer/:id" element={<Streamer />} />
      </Routes>
      <Footer/>
     </Router>
