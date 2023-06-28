@@ -16,6 +16,7 @@ export default function Home() {
          <FindForm TriggerModal={triggerStreamerModal}/>
          <p className='mt-4 text-3xl font-bold text-white md:text-4xl'>Top streamers:</p>
          <StreamerCard/>   
+         
          <AddStreamerModal isOpening={modalIsOpening} CloseModal={triggerStreamerModal}/> 
       </div>
     </main>
