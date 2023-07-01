@@ -38,7 +38,7 @@ export default function AddStreamerModal({ isOpening, CloseModal })
                  </label>
                 <button className="btn bg-purple-950 text-3xl px-12 py-2 mt-4 rounded-full hover:bg-purple-700"> Add! </button>
                  </form>
-                 <button className="btn bg-gray-950/50 text-sm py-2 w-4/5 self-center mt-4 mb-4 hover:bg-gray-800/75 md:w-2/5" onClick={CloseModal}> <FontAwesomeIcon icon={faArrowLeft}/> Back! </button> 
+                 <button className="btn bg-gray-950/50 text-sm py-2 w-4/5 self-center mt-4 mb-4 hover:bg-gray-800/75 md:w-2/5" onClick={CloseModal}> <FontAwesomeIcon icon={faArrowLeft}/> Back </button> 
 
             </div>
         </div>

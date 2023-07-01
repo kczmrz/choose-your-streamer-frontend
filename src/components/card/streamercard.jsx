@@ -16,7 +16,7 @@ export default function  StreamerCard()
                <div className="flex flex-row mt-2 ">
                 <div className="flex flex-col w-8/12"> 
                 <ProgressBar progress={90}/>
-                <span className="text-lg text-white font-bold hidden md:flex lg:text-xl"> Votes: <span className="text-green-400">85  </span>/ <span className="text-red-400"> 15</span> </span> 
+                <span className="text-lg text-white font-bold hidden md:flex lg:text-2xl"> Votes: &nbsp; <span className="text-green-400">85  </span> &nbsp;/&nbsp; <span className="text-red-400"> 15</span> </span> 
                 </div>
                    <div className="flex flex-row place-self-center">
                      <button className="btn px-6 py-2 bg-gray-800/75 text-green-400 rounded cursor-pointer rounded-full hover:bg-green-500 hover:text-gray-200"><p className="inline place-self-center md:hidden">85</p><FontAwesomeIcon icon={faCaretUp} size="2x"/> </button>
