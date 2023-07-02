@@ -8,6 +8,7 @@ import axios from "axios";
 
 export default function  StreamerCard({ data, rank, refresh })
 {
+    /* The first three places will have colors, while the rest will be gray */
     /*Streamer rank function */
     const [streamerRank, setStreamerRank] = useState(rank + 1);
     const [TrophyStyle, setTrophyStyle] = useState("text-2xl ml-4 place-self-center hidden text-gray-400 md:inline");
@@ -54,8 +55,7 @@ export default function  StreamerCard({ data, rank, refresh })
    /* a user can only vote once (you can add a record to the cookie-file in the future ) */
    const [userUpvote, setUserUpvote] = useState(false);
 
-  /* The first three places will have colors, while the rest will be gray */
-  console.log(data)
+ 
   
     return (
         <div className={BorderCardStyle}>
