@@ -6,7 +6,7 @@ export default function Footer()
  
     return(
         <>
-        <footer className="w-full flex flex-col items-center justify-center text-center  ">
+        <footer className="w-full mt-12 flex flex-col items-center justify-center text-center  ">
            <span className='border border-glow-blue h-2 w-5/6 bg-white md:w-4/5 lg:w-3/5 xl:w-2/5'/>
             <div className="p-12 flex flex-row ">
                 <img src={'/images/AvatarForFooter.jpg'} width={80} height={80} alt="Logo" className="rounded-full border border-glow-blue "/>

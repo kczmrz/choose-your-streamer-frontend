@@ -16,6 +16,7 @@ export default function Platform({ platform })
 
     /*Set icon */
     useEffect(()=> {
+      const AsyncSetIcon = async() => {
        switch(platform){
           case "Kick":
             setIcon(PlatformIcon.kick);
@@ -37,7 +38,9 @@ export default function Platform({ platform })
             setIcon(PlatformIcon.youtube);
             break;
        }
-    }, [])
+      }
+      AsyncSetIcon()
+    }, [Icon])
     return(
         <div>
          <img src={Icon} alt="" width={40} height={40} />

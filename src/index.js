@@ -6,6 +6,8 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './pages';
 import Streamer from './pages/streamer';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 
@@ -17,6 +19,18 @@ root.render(
         <Route path="/" element={<Home />} />
         <Route path="/streamer/:id" element={<Streamer />} />
      </Routes>
+     <ToastContainer
+      position="bottom-left"
+      autoClose={5000}
+      hideProgressBar={false}
+      newestOnTop={false}
+      closeOnClick
+      rtl={false}
+      pauseOnFocusLoss
+      draggable
+      pauseOnHover
+      theme="dark"
+      />
      <Footer/>
     </Router>
   </React.StrictMode>

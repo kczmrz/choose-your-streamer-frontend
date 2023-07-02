@@ -13,7 +13,7 @@ export default function CookieAlert()
             buttonStyle={{ color: "white", fontSize: "13px", background: "#1e1b4b" }}
             expires={150}
             >
-            This application uses cookies🍪
+            In this place you can get info about cookies 🍪🍪🍪
          </CookieConsent>
         </>
     )
